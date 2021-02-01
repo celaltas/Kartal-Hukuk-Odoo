@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="avukat_tree" model="ir.ui.view">
+        <field name="name">kh.avukat.tree</field>
+        <field name="model">kh.avukat</field>
+        <field name="arch" type="xml">
+            <tree string="Personel">
+                <field name="unvan"/>
+                <field name="ad"/>
+                <field name="soyad"/>
+                <field name="baroSicilNo"/>
+                <field name="birlikSicilNo"/>
+                <field name="yabanciDil"/>
+                <field name="universite"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="avukat_form" model="ir.ui.view">
+        <field name="name">kh.avukat.form</field>
+        <field name="model">kh.avukat</field>
+        <field name="arch" type="xml">
+            <form string="Personel">
+                <sheet>
+                    <div>
+                        <field name="image_1920" widget="image" class="oe_left oe_avatar"/>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="unvan"/>
+                            <field name="ad"/>
+                            <field name="soyad"/>
+                            <field name="baroSicilNo"/>
+                            <field name="birlikSicilNo"/>
+                        </group>
+                        <group>
+                            <field name="yabanciDil"/>
+                            <field name="universite"/>
+                            <field name="lise"/>
+                            <field name="fakulte"/>
+                            <field name="faaliyetAlanlari_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="ozgecmis"/>
+                        <field name="image_url"/>
+
+                    </group>
+                </sheet>
+            </form>
+
+        </field>
+    </record>
+
+
+    <record id="action_avukat" model="ir.actions.act_window">
+        <field name="name">Personel</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">kh.avukat</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Personel Oluştur!
+            </p>
+        </field>
+    </record>
+
+
+    <menuitem id="kh_root" name="Kartal Hukuk" sequence="-1"
+              web_icon="kartal_hukuk,static/description/icon.png" />
+    <menuitem id="kh_avukat" name="Personel" parent="kh_root" action="action_avukat" sequence="10"/>
+</odoo>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <data>
+        <template id="team_page_details">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/web_kartal_hukuk/static/src/css/homepage_style.css"/>
+                <link rel="stylesheet"
+                      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+                      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+                      crossorigin="anonymous"/>
+
+
+            </xpath>
+            <html>
+                <head>
+                    <meta name="viewport"
+                          content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                    <title>Kadromuz Detaylar</title>
+                </head>
+                <body>
+                    <div id="container">
+                         <div class="bg-modal">
+                            <div class="popUpContent">
+                                <i class="fa fa-close" style="font-size:20px"></i>
+                                <form id="contactForm" action="/CreateRequest" method="post">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" id="InputName"
+                                               placeholder="Adınız"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="surname" class="form-control" id="InputSurname"
+                                               placeholder="Soyadınız"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="phone" class="form-control" id="InputNumber"
+                                               placeholder="Telefon Numaranız"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="mail" class="form-control" id="InputEmail"
+                                               placeholder="E-mail Adresiniz"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="comment" class="form-control" form="contactForm"
+                                                  placeholder="Mesajınız"/>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Gönder</button>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div id="wm-ipp-base"></div>
+                        <div id="mastheads">
+                            <div id="headerContainer">
+                                <div id="headerLeft">
+                                    <div id="sideBranding">
+                                        <a href="/Anasayfa" title="Kartal Hukuk Bürosu" rel="home">
+                                            <img src="/web_kartal_hukuk/static/description/KartalHukuk_logo.png"
+                                                 alt="Kartal Hukuk Bürosu"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="headerRight">
+                                    <ul>
+                                        <li>
+                                            <div class="contact-box">
+                                                <div class="box-icon left">
+                                                    <i class="fa fa-map-marker"></i>
+                                                </div>
+                                                <div class="box-text right">
+                                                    <div class="contact-phone">Ebulula Mardin Cd. No:101</div>
+                                                    <div class="contact-text">Akatlar/İstanbul</div>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="contact-box">
+                                                <div class="box-icon left">
+                                                    <i class="fa fa-phone"></i>
+                                                </div>
+                                                <div class="box-text right">
+                                                    <div class="contact-phone">0212 284 33 60-61</div>
+                                                    <div class="contact-text">Faks: 0212 270 27 12</div>
+                                                    <div class="contact-text">Gsm: 0(532) 136 92 30</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="contact-box">
+                                                <div class="box-text right">
+
+                                                    <button id="contactFormButton">İletişim Formu</button>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menuCover">
+                            <div id="menu">
+                                <ul>
+                                    <li>
+                                        <a href="/Anasayfa">Anasayfa</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Hakkımızda">Hakkımızda</a>
+                                    </li>
+                                    <li class="dataDropDown">
+                                        <a href="/Kadromuz">Kadromuz</a>
+                                        <div class="dropDown dropTeam">
+                                            <ul>
+                                                <t t-foreach="personnel" t-as="person">
+                                                    <li>
+                                                        <a t-attf-href="/Kadromuz/{{person.ad}}">
+                                                            <t t-if="'Avukat' in person.unvan">Av.
+                                                                <t t-esc="person.ad + ' ' + person.soyad"/>
+                                                            </t>
+                                                            <t t-else="not 'Avukat' in person.unvan">
+                                                                <t t-esc="person.ad + ' ' + person.soyad"/>
+                                                            </t>
+                                                        </a>
+                                                    </li>
+                                                </t>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="dataDropDown">
+                                        <a href="/Faaliyet-Alanları">Faaliyet Alanları</a>
+                                        <div class="dropDown dropActivities">
+                                            <ul>
+                                                <t t-foreach="activities" t-as="activity">
+                                                    <li>
+                                                        <a t-attf-href="/Faaliyet-Alanları/{{activity.id}}">
+                                                            <t t-esc="activity.name"/>
+                                                        </a>
+                                                    </li>
+                                                </t>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="/Vekalet-Bilgileri">Vekalet Bilgileri</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Faydalı-Linkler">Faydalı Linkler</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Iletisim">İletişim</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Güncel-Bilgiler">Güncel Bilgiler</a>
+                                    </li>
+                                    <li>
+                                        <a href="/web/login">Giriş</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div id="aboutContent">
+                            <div id="aboutContentWrapper">
+                                <div id="aboutContentLeft">
+                                    <h2>Büro Hakkında</h2>
+                                </div>
+                                <div id="aboutContentRight">
+                                    <t t-foreach="personnel" t-as="person">
+                                        <div id="titleAndImage">
+                                            <img t-att-src="person.image_url" alt=""/>
+                                            <t t-if="'Avukat' in person.unvan">
+                                                <h2>Av.
+                                                    <t t-esc="person.ad + ' ' + person.soyad"/>
+                                                </h2>
+                                            </t>
+                                            <t t-if="not 'Avukat' in person.unvan">
+                                                <h2>
+                                                    <t t-esc="person.ad + ' ' + person.soyad"/>
+                                                </h2>
+                                            </t>
+                                        </div>
+                                        <div id="personelDetail">
+                                            <t t-if="person.ad == 'Kadir'">
+
+                                                <p>
+                                                    30 Temmuz 1954 tarihinde Erzincan’ın İliç Kuruçaya bağlı Kuzkışla
+                                                    köyünde dünyaya gelen Kadir KARTAL, ilköğretimini İliç İlkokulu ve
+                                                    Kuzkışla İlkokulunda tamamladı.
+                                                </p>
+                                                <p>
+                                                    Köyüne en yakın durumdaki Fırat Ortaokuluna her gün 5 kilometrelik
+                                                    yolu
+                                                    katederek bitiren Kadir KARTAL liseyi İstanbul Kabataş Erkek
+                                                    Lisesinde
+                                                    tamamladı. 1972 yılında lise tahsilini bitiren Kadir KARTAL 1979
+                                                    yılında’da İstanbul Hukuk Fakültesin’den mezun oldu.
+
+                                                </p>
+                                                <p>
+                                                    Önce avukatlık, daha sonra hakimlik stajını tamamlayan Kadir KARTAL
+                                                    bir
+                                                    süre Siirt’de hakimlik görevi de yaptı.
+                                                </p>
+                                                <p>
+                                                    Askerliğini asteğmen olarak genelkurmay başkanlığın’da ifa eden
+                                                    Kadir
+                                                    KARTAL 1983 yılından bu yana serbest avukat hukukçu olarak
+                                                    çalışıyor.
+                                                </p>
+                                                <p>
+                                                    Emperyalizme Karşı Türk Düşünce ve Hayat Tarzı adlı kitabı
+                                                    bulunmaktadır
+                                                </p>
+                                                <p>
+                                                    Bu zamana kadar 38 dernek ve sivil toplum kuruluşunun kurucusu
+                                                    yöneticisi ve üyesi olan Kadir KARTAL Yeniden Müdafaa-i Hukuk
+                                                    Derneği
+                                                    kurucu üyesi ve başkan yardımcısı Müdafaa-i Hukuk Hareketi Partisi
+                                                    kurucusu ve ilk kurucu genel başkanı halen Erzincan Kültür Eğitim
+                                                    Vakfı
+                                                    kurucusu, Erzincan Sanayici İş Adamları Derneği üyesi, Hukukçular
+                                                    Derneği üyesi, Kabataşlılar Derneği üyesi, Levent Tenis Kulübü
+                                                    Derneği
+                                                    üyesi, Kuzkışla Köyü Derneği üyesi, Beşiktaş Jimnastik Kulübü
+                                                    Disiplin
+                                                    Kurulu üyesi olarak faaliyetlerini sürdürmektedir.
+                                                </p>
+                                            </t>
+                                            <t t-if="person.unvan and person.ad != 'Kadir'">
+                                                <span>Ünvanı:
+                                                    <t t-esc="person.unvan"/>
+                                                </span>
+                                                <br/>
+                                            </t>
+                                            <t t-if="person.baroSicilNo">
+                                                <span>Baro Sicil No :
+                                                    <t t-esc="person.baroSicilNo"/>
+                                                </span>
+                                                <br/>
+                                            </t>
+                                            <t t-if="person.birlikSicilNo">
+                                                <span>Birlik Sicil No:
+                                                    <t t-esc="person.birlikSicilNo"/>
+                                                </span>
+                                                <br/>
+                                            </t>
+                                            <t t-if="person.universite">
+                                                <span>Üniversite:
+                                                    <t t-esc="person.universite +', '+ person.fakulte"/>
+                                                </span>
+                                                <br/>
+                                            </t>
+                                            <t t-if="person.lise">
+                                                <span>Lise:
+                                                    <t t-esc="person.lise"/>
+                                                </span>
+                                                <br/>
+                                            </t>
+                                            <t t-if="person.yabanciDil">
+                                                <span>Yabancı Dil:
+                                                    <t t-esc="person.yabanciDil"/>
+                                                </span>
+                                                <br/>
+                                            </t>
+                                            <t t-if="person.faaliyetAlanlari_ids">
+                                                <span>Faaliyet Alanları:
+                                                    <tr t-foreach="person.faaliyetAlanlari_ids" t-as="l">
+
+                                                        <t t-if="l_index != l_size-1">
+                                                            <t t-esc="l.name +', '"/>
+
+                                                        </t>
+                                                        <t t-else="l_index == l_size-1">
+                                                            <t t-esc="l.name"/>
+                                                        </t>
+                                                    </tr>
+                                                </span>
+                                                <br/>
+                                            </t>
+
+                                        </div>
+
+
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="footer-connect">
+                            <div id="container">
+                                <div id="footer-subscribe">
+                                    <form>
+                                        <label>Bültenimize Üye Olun!</label>
+                                        <input type="text" value="" name="EMAIL" class="subs_input" id="mce-EMAIL"
+                                               placeholder="Enter your e-mail address" required="true"/>
+                                        <input type="submit" name="subscribe" value="Subscribe" class="btn btn-light"/>
+                                    </form>
+                                </div>
+                                <div id="footer-social">
+                                    <label for="">Kartal Hukuk Sosyal Medya</label>
+                                    <a target="_blank" href="https://twitter.com/kartalhkukcular" title="Twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a target="_blank"
+                                       href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214"
+                                       title="Facebook">
+                                        <i class="fa fa-facebook-official"></i>
+                                    </a>
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ"
+                                       title="Youtube">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="footer">
+                            <div id="footerDetail">
+                                <div id="footerHeadTag">Kartal Hukuk Bürosu</div>
+                                <div id="footerAddress">Adres: Ebulula Mardin Caddesi No:101 (Park Maya Sitesi karşısı)
+                                    Akatlar/
+                                    İSTANBUL
+                                </div>
+                                <div id="footerContact">
+                                    <p>Telefon: 0212 284 33 60-61</p>
+                                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#032;&#160;&#160;&#160;0212
+                                        284 59 53
+                                    </p>
+                                    <p>Faks: 0212 270 27 12</p>
+                                    <p>Gsm: 0532 136 92 30</p>
+                                </div>
+                                <div id="footerBottomTag">Copyright © 2018 Kartal Hukuk Bürosu</div>
+
+                            </div>
+                        </div>
+                        <button id="ScrollToTop">
+                            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+                    <script type="text/javascript" src="/web_kartal_hukuk/static/src/js/script.js"/>
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                            crossorigin="anonymous">
+
+                    </script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+                            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+                            crossorigin="anonymous">
+
+                    </script>
+
+                    <script>
+
+                    </script>
+                </body>
+            </html>
+
+        </template>
+    </data>
+</odoo>

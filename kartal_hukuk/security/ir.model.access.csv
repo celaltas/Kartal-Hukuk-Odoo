@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_kh_avukat,access.kh.avukat,model_kh_avukat,,1,1,1,1
+access_kh_faaliyet,access.kh.faaliyet,model_kh_faaliyet,,1,1,1,1
+access_kh_contact,access.kh.contact,model_kh_contact,,1,1,1,1
+access_kh_article,access.kh.article,model_kh_article,,1,1,1,1
+

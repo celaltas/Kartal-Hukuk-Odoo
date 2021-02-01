@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!--Email template -->
+        <record id="email_template" model="mail.template">
+            <field name="name">KH-Email Template</field>
+            <field name="email_from">${user.name and user.company_id.email or ''}</field>
+            <field name="subject">Websitesi Mesajı</field>
+            <field name="email_to">celaltas@vismarin.com</field>
+            <field name="model_id" ref="kartal_hukuk.model_kh_contact"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="lang">${user.lang}</field>
+            <field name="body_html" type="html">
+                <div>
+                    <p>
+                        Sayın İlgili,
+                        <br/>
+                        <br/>
+                        Websitesi aracılığıyla alınan mesaj aşağıdaki gibidir;
+                        <br/>
+                        <br/>
+                        Ad: ${object.name or 'n/a' }
+                        <br/>
+                        Soyad: ${object.surname or 'n/a' }
+                        <br/>
+                        Tarih: ${object.date or 'n/a' }
+                        <br/>
+                        Telefon: ${object.phone or 'n/a' }
+                        <br/>
+                        Mail: ${object.mail or 'n/a' }
+                        <br/>
+                        Mesaj: ${object.comment or 'n/a' }
+                    </p>
+                </div>
+                <br/>
+            </field>
+        </record>
+    </data>
+</odoo>

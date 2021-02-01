@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="faaliyet_tree" model="ir.ui.view">
+        <field name="name">kh.faaliyet.tree</field>
+        <field name="model">kh.faaliyet</field>
+        <field name="arch" type="xml">
+            <tree string="Faaliyet Alanları">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="faaliyet_form" model="ir.ui.view">
+        <field name="name">kh.faaliyet.form</field>
+        <field name="model">kh.faaliyet</field>
+        <field name="arch" type="xml">
+            <form string="Faaliyet Alanları">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+
+        </field>
+    </record>
+
+
+    <record id="action_faaliyet" model="ir.actions.act_window">
+        <field name="name">Faaliyet Alanları</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">kh.faaliyet</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Faaliyet Oluştur!
+            </p>
+        </field>
+    </record>
+
+
+
+    <menuitem id="kh_faaliyet" name="Faaliyet Alanları" parent="kh_root" action="action_faaliyet" sequence="20"/>
+</odoo>

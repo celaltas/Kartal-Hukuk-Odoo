@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <data>
+        <template id="header_custom" inherit_id="website.layout" name="Custom Header">
+            <xpath expr="//nav" position="replace">
+                <div class='row' style='height:0;'></div>
+            </xpath>
+            <xpath expr="//div[@class='container']/a"
+                   position="attributes">
+                <attribute name="href">/Anasayfa</attribute>
+            </xpath>
+
+
+        </template>
+
+        <template id="footer_custom" inherit_id="website.footer_custom" name="Custom Footer">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+
+                </div>
+            </xpath>
+            <xpath expr="//div[@class='o_footer_copyright']" position="replace">
+                <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+
+                </div>
+            </xpath>
+        </template>
+
+
+    </data>
+</odoo>
+
