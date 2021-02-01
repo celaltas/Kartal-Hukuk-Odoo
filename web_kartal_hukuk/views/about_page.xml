@@ -152,14 +152,16 @@
                                         <a href="/Vekalet-Bilgileri">Vekalet Bilgileri</a>
                                     </li>
                                     <li>
+                                        <a href="/Güncel-Bilgiler">Güncel Bilgiler</a>
+                                    </li>
+                                    <li>
                                         <a href="/Faydalı-Linkler">Faydalı Linkler</a>
                                     </li>
+
                                     <li>
                                         <a href="/Iletisim">İletişim</a>
                                     </li>
-                                    <li>
-                                        <a href="/Güncel-Bilgiler">Güncel Bilgiler</a>
-                                    </li>
+
                                     <li>
                                         <a href="/web/login">Giriş</a>
                                     </li>
@@ -170,20 +172,43 @@
 
                         <div id="aboutContent">
                             <div id="aboutContentWrapper">
-                                 <div id="aboutContentLeft">
-                                        <h2>Büro Hakkında</h2>
+                                <div id="aboutContentLeft">
+                                    <h2>Büro Hakkında</h2>
                                 </div>
-                                 <div id="aboutContentRight">
-                                        <h2>Hakkımızda</h2>
+                                <div id="aboutContentRight">
+                                    <h2>Hakkımızda</h2>
                                     <p>
 
-                                        <a href="/Anasayfa">KADİR KARTAL AVUKATLIK BÜROSU</a> 1983 yılında kurulmuş olup kuruluş amacı türk adalet sisteminin karmaşık yapısı içinde müvekkillerine en doğru ve hızlı şekilde hizmet vermektir.Adalet Sistemindeki değişimin amacı her ne kadar daha hızlı dinamik ve güncel bir hukuk sistemi oluşturmak olsa da; teoride hedeflenenden çok farklı bir gerçeklik meydana gelmiş ve sistem içinden çıkılmaz ve karmaşık bir hal almıştır.Bu süreçte müvekkillerimize en hızlı, şeffaf ve çözüm odaklı sonuçlar sunmak temel ilkemizdir.
+                                        <a href="/Anasayfa">KADİR KARTAL AVUKATLIK BÜROSU</a>
+                                        1983 yılında kurulmuş olup kuruluş amacı türk adalet sisteminin karmaşık yapısı
+                                        içinde müvekkillerine en doğru ve hızlı şekilde hizmet vermektir.Adalet
+                                        Sistemindeki değişimin amacı her ne kadar daha hızlı dinamik ve güncel bir hukuk
+                                        sistemi oluşturmak olsa da; teoride hedeflenenden çok farklı bir gerçeklik
+                                        meydana gelmiş ve sistem içinden çıkılmaz ve karmaşık bir hal almıştır.Bu
+                                        süreçte müvekkillerimize en hızlı, şeffaf ve çözüm odaklı sonuçlar sunmak temel
+                                        ilkemizdir.
                                     </p>
                                     <p>
-                                        Bugün için avukatlık büromuz konularında uzman hukukçu ve avukatlarla ceza hukuku, ticari ceza hukuku, ticaret hukuku, sözleşmeler hukuku, şirket birleşmeleri, borçlar hukuku, medeni hukuk, aile hukuku, ekonomi hukuku, finans hukuku, sermaye piyasası hukuku, bankacılık hukuku, tüketici hukuku, gayrimenkul hukuku, icra ve iflas hukuku, iş hukuku, iş ve sosyal güvenlik hukuku, fikri ve sınaî mülkiyet hukuku, idare hukuku, vergi hukuku ve yabancılar hukuku alanlarında faaliyet göstermektedir.
+                                        Bugün için avukatlık büromuz konularında uzman hukukçu ve avukatlarla ceza
+                                        hukuku, ticari ceza hukuku, ticaret hukuku, sözleşmeler hukuku, şirket
+                                        birleşmeleri, borçlar hukuku, medeni hukuk, aile hukuku, ekonomi hukuku, finans
+                                        hukuku, sermaye piyasası hukuku, bankacılık hukuku, tüketici hukuku, gayrimenkul
+                                        hukuku, icra ve iflas hukuku, iş hukuku, iş ve sosyal güvenlik hukuku, fikri ve
+                                        sınaî mülkiyet hukuku, idare hukuku, vergi hukuku ve yabancılar hukuku
+                                        alanlarında faaliyet göstermektedir.
                                     </p>
                                     <p>
-                                        Büromuz faaliyet alanlarındaki tüm konularında ve projelerinde müvekkillerine danışmanlık hizmeti veren <a href="/Anasayfa">KADİR KARTAL AVUKATLIK BÜROSU</a> ekip çalışmasıyla hukuki uyuşmazlıklarda müvekkillerinin menfaat ve ihtiyaçları doğrultusunda yaratıcı ve çözüm odaklı hizmet sunmaktadır. <a href="/Anasayfa">KADİR KARTAL AVUKATLIK BÜROSU</a> birçok şirkete hukuk danışmanlık hizmeti vermenin yanısıra, Türkiye’nin önde gelen akademisyenleri tarafından da desteklenerek özel hukuk ve ceza hukuku uyuşmazlıklarında avukatlık hizmetleri vermekte, ayrıca icra ve iflas takiplerini de uzman kadrosuyla yürütmektedir.Araştırmacı ve güncel içtihatları takip etme konusunda ilkeli olan ofisimizde her türlü yeniliğe açık ve takipçi olma anlayışını prensip haline getirmiştir.
+                                        Büromuz faaliyet alanlarındaki tüm konularında ve projelerinde müvekkillerine
+                                        danışmanlık hizmeti veren <a href="/Anasayfa">KADİR KARTAL AVUKATLIK BÜROSU</a> ekip
+                                        çalışmasıyla hukuki uyuşmazlıklarda müvekkillerinin menfaat ve ihtiyaçları
+                                        doğrultusunda yaratıcı ve çözüm odaklı hizmet sunmaktadır. <a href="/Anasayfa">
+                                        KADİR KARTAL AVUKATLIK BÜROSU
+                                    </a> birçok şirkete hukuk danışmanlık hizmeti vermenin yanısıra, Türkiye’nin önde
+                                        gelen akademisyenleri tarafından da desteklenerek özel hukuk ve ceza hukuku
+                                        uyuşmazlıklarında avukatlık hizmetleri vermekte, ayrıca icra ve iflas
+                                        takiplerini de uzman kadrosuyla yürütmektedir.Araştırmacı ve güncel içtihatları
+                                        takip etme konusunda ilkeli olan ofisimizde her türlü yeniliğe açık ve takipçi
+                                        olma anlayışını prensip haline getirmiştir.
                                     </p>
                                 </div>
                             </div>
@@ -205,10 +230,13 @@
                                     <a target="_blank" href="https://twitter.com/kartalhkukcular" title="Twitter">
                                         <i class="fa fa-twitter"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214" title="Facebook">
+                                    <a target="_blank"
+                                       href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214"
+                                       title="Facebook">
                                         <i class="fa fa-facebook-official"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ" title="Youtube">
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ"
+                                       title="Youtube">
                                         <i class="fa fa-youtube-play"></i>
                                     </a>
                                 </div>
@@ -238,7 +266,7 @@
                         </button>
 
                     </div>
-                     <script type="text/javascript" src="/web_kartal_hukuk/static/src/js/script.js"/>
+                    <script type="text/javascript" src="/web_kartal_hukuk/static/src/js/script.js"/>
                     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
                             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
                             crossorigin="anonymous">

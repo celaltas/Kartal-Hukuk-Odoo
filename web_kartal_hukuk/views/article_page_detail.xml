@@ -152,14 +152,15 @@
                                         <a href="/Vekalet-Bilgileri">Vekalet Bilgileri</a>
                                     </li>
                                     <li>
+                                        <a href="/Güncel-Bilgiler">Güncel Bilgiler</a>
+                                    </li>
+                                    <li>
                                         <a href="/Faydalı-Linkler">Faydalı Linkler</a>
                                     </li>
                                     <li>
                                         <a href="/Iletisim">İletişim</a>
                                     </li>
-                                    <li>
-                                        <a href="/Güncel-Bilgiler">Güncel Bilgiler</a>
-                                    </li>
+
                                     <li>
                                         <a href="/web/login">Giriş</a>
                                     </li>
@@ -170,13 +171,13 @@
 
                         <div id="aboutContent">
                             <div id="aboutContentWrapper">
-                                 <div id="aboutContentUp">
-                                       <h5 class="post-title">
-                                           <t t-esc="article.title"/>
-                                       </h5>
+                                <div id="aboutContentUp">
+                                    <h5 class="post-title">
+                                        <t t-esc="article.title"/>
+                                    </h5>
                                 </div>
-                                 <div id="aboutContentDown">
-                                     <t t-raw="article.content"/>
+                                <div id="aboutContentDown">
+                                    <t t-raw="article.content"/>
                                 </div>
                             </div>
                         </div>
@@ -197,10 +198,13 @@
                                     <a target="_blank" href="https://twitter.com/kartalhkukcular" title="Twitter">
                                         <i class="fa fa-twitter"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214" title="Facebook">
+                                    <a target="_blank"
+                                       href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214"
+                                       title="Facebook">
                                         <i class="fa fa-facebook-official"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ" title="Youtube">
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ"
+                                       title="Youtube">
                                         <i class="fa fa-youtube-play"></i>
                                     </a>
                                 </div>
@@ -230,7 +234,7 @@
                         </button>
 
                     </div>
-                     <script type="text/javascript" src="/web_kartal_hukuk/static/src/js/script.js"/>
+                    <script type="text/javascript" src="/web_kartal_hukuk/static/src/js/script.js"/>
                     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
                             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
                             crossorigin="anonymous">

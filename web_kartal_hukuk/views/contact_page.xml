@@ -118,14 +118,15 @@
                                         <a href="/Vekalet-Bilgileri">Vekalet Bilgileri</a>
                                     </li>
                                     <li>
+                                        <a href="/Güncel-Bilgiler">Güncel Bilgiler</a>
+                                    </li>
+                                    <li>
                                         <a href="/Faydalı-Linkler">Faydalı Linkler</a>
                                     </li>
                                     <li>
                                         <a href="/Iletisim">İletişim</a>
                                     </li>
-                                    <li>
-                                        <a href="/Güncel-Bilgiler">Güncel Bilgiler</a>
-                                    </li>
+
                                     <li>
                                         <a href="/web/login">Giriş</a>
                                     </li>
@@ -139,21 +140,26 @@
                                 <div id="contactContentRight">
                                     <h3>İletişim Formu</h3>
                                     <form id="contactForm" action="/CreateRequest" method="post">
-                                         <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                         <div class="form-group">
-                                            <input type="text" name="name" class="form-control" id="InputName" placeholder="Adınız"/>
+                                            <input type="text" name="name" class="form-control" id="InputName"
+                                                   placeholder="Adınız"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" name="surname" class="form-control" id="InputSurname" placeholder="Soyadınız"/>
+                                            <input type="text" name="surname" class="form-control" id="InputSurname"
+                                                   placeholder="Soyadınız"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="tel" name="phone" class="form-control" id="InputNumber" placeholder="Telefon Numaranız"/>
+                                            <input type="tel" name="phone" class="form-control" id="InputNumber"
+                                                   placeholder="Telefon Numaranız"/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" name="mail" class="form-control" id="InputEmail" placeholder="E-mail Adresiniz"/>
+                                            <input type="email" name="mail" class="form-control" id="InputEmail"
+                                                   placeholder="E-mail Adresiniz"/>
                                         </div>
                                         <div class="form-group">
-                                            <textarea name="comment" class="form-control" form="contactForm" placeholder="Mesajınız"/>
+                                            <textarea name="comment" class="form-control" form="contactForm"
+                                                      placeholder="Mesajınız"/>
                                         </div>
 
                                         <button type="submit" class="btn btn-primary">Gönder</button>
@@ -178,10 +184,13 @@
                                     <a target="_blank" href="https://twitter.com/kartalhkukcular" title="Twitter">
                                         <i class="fa fa-twitter"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214" title="Facebook">
+                                    <a target="_blank"
+                                       href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214"
+                                       title="Facebook">
                                         <i class="fa fa-facebook-official"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ" title="Youtube">
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ"
+                                       title="Youtube">
                                         <i class="fa fa-youtube-play"></i>
                                     </a>
                                 </div>

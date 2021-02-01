@@ -22,7 +22,7 @@
                 </head>
                 <body>
                     <div id="container">
-                         <div class="bg-modal">
+                        <div class="bg-modal">
                             <div class="popUpContent">
                                 <i class="fa fa-close" style="font-size:20px"></i>
                                 <form id="contactForm" action="/CreateRequest" method="post">
@@ -96,7 +96,7 @@
                                             <div class="contact-box">
                                                 <div class="box-text right">
 
-                                                        <button id="contactFormButton">İletişim Formu</button>
+                                                    <button id="contactFormButton">İletişim Formu</button>
 
                                                 </div>
                                             </div>
@@ -152,11 +152,12 @@
                                         <a href="/Vekalet-Bilgileri">Vekalet Bilgileri</a>
                                     </li>
                                     <li>
-                                        <a href="/Faydalı-Linkler">Faydalı Linkler</a>
-                                    </li>
-                                    <li>
                                         <a href="/Iletisim">İletişim</a>
                                     </li>
+                                    <li>
+                                        <a href="/Faydalı-Linkler">Faydalı Linkler</a>
+                                    </li>
+
                                     <li>
                                         <a href="/Güncel-Bilgiler">Güncel Bilgiler</a>
                                     </li>
@@ -177,31 +178,49 @@
                                     <h2>Faydalı Linkler</h2>
                                     <ul>
                                         <li>
-                                            <a class="beneficialLinks" href="https://www.tccb.gov.tr/" target="_blank">Cumhurbaşkanlığı</a>
+                                            <a class="beneficialLinks" href="https://www.tccb.gov.tr/" target="_blank">
+                                                Cumhurbaşkanlığı
+                                            </a>
                                         </li>
                                         <li>
-                                            <a class="beneficialLinks" href="https://www.anayasa.gov.tr/tr/anasayfa/" target="_blank">Anayasa Mahkemesi</a>
+                                            <a class="beneficialLinks" href="https://www.anayasa.gov.tr/tr/anasayfa/"
+                                               target="_blank">Anayasa Mahkemesi
+                                            </a>
                                         </li>
                                         <li>
-                                            <a class="beneficialLinks" href="https://www.yargitay.gov.tr/" target="_blank">Yargıtay</a>
+                                            <a class="beneficialLinks" href="https://www.yargitay.gov.tr/"
+                                               target="_blank">Yargıtay
+                                            </a>
                                         </li>
                                         <li>
-                                            <a class="beneficialLinks" href="https://www.danistay.gov.tr/" target="_blank">Danıştay</a>
-                                        </li>
-                                                                                <li>
-                                            <a class="beneficialLinks" href="https://www.adalet.gov.tr/" target="_blank">Adalet Bakanlığı</a>
-                                        </li>
-                                        <li>
-                                            <a class="beneficialLinks" href="https://www.resmigazete.gov.tr/" target="_blank">Resmi Gazete</a>
+                                            <a class="beneficialLinks" href="https://www.danistay.gov.tr/"
+                                               target="_blank">Danıştay
+                                            </a>
                                         </li>
                                         <li>
-                                            <a class="beneficialLinks" href="https://www.istanbulbarosu.org.tr/" target="_blank">İstanbul Barosu</a>
+                                            <a class="beneficialLinks" href="https://www.adalet.gov.tr/"
+                                               target="_blank">Adalet Bakanlığı
+                                            </a>
                                         </li>
                                         <li>
-                                            <a class="beneficialLinks" href="https://giris.turkiye.gov.tr/Giris/" target="_blank">E-devlet</a>
+                                            <a class="beneficialLinks" href="https://www.resmigazete.gov.tr/"
+                                               target="_blank">Resmi Gazete
+                                            </a>
                                         </li>
                                         <li>
-                                            <a class="beneficialLinks" href="https://uyap.gov.tr/" target="_blank">UYAP</a>
+                                            <a class="beneficialLinks" href="https://www.istanbulbarosu.org.tr/"
+                                               target="_blank">İstanbul Barosu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="beneficialLinks" href="https://giris.turkiye.gov.tr/Giris/"
+                                               target="_blank">E-devlet
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="beneficialLinks" href="https://uyap.gov.tr/" target="_blank">
+                                                UYAP
+                                            </a>
                                         </li>
                                     </ul>
 
@@ -225,10 +244,13 @@
                                     <a target="_blank" href="https://twitter.com/kartalhkukcular" title="Twitter">
                                         <i class="fa fa-twitter"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214" title="Facebook">
+                                    <a target="_blank"
+                                       href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214"
+                                       title="Facebook">
                                         <i class="fa fa-facebook-official"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ" title="Youtube">
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ"
+                                       title="Youtube">
                                         <i class="fa fa-youtube-play"></i>
                                     </a>
                                 </div>
@@ -258,7 +280,7 @@
                         </button>
 
                     </div>
-                     <script type="text/javascript" src="/web_kartal_hukuk/static/src/js/script.js"/>
+                    <script type="text/javascript" src="/web_kartal_hukuk/static/src/js/script.js"/>
                     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
                             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
                             crossorigin="anonymous">

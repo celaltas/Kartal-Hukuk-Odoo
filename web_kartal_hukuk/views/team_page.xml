@@ -22,7 +22,7 @@
                 </head>
                 <body>
                     <div id="container">
-                         <div class="bg-modal">
+                        <div class="bg-modal">
                             <div class="popUpContent">
                                 <i class="fa fa-close" style="font-size:20px"></i>
                                 <form id="contactForm" action="/CreateRequest" method="post">
@@ -96,7 +96,7 @@
                                             <div class="contact-box">
                                                 <div class="box-text right">
 
-                                                        <button id="contactFormButton">İletişim Formu</button>
+                                                    <button id="contactFormButton">İletişim Formu</button>
 
                                                 </div>
                                             </div>
@@ -152,11 +152,12 @@
                                         <a href="/Vekalet-Bilgileri">Vekalet Bilgileri</a>
                                     </li>
                                     <li>
-                                        <a href="/Faydalı-Linkler">Faydalı Linkler</a>
-                                    </li>
-                                    <li>
                                         <a href="/Iletisim">İletişim</a>
                                     </li>
+                                    <li>
+                                        <a href="/Faydalı-Linkler">Faydalı Linkler</a>
+                                    </li>
+
                                     <li>
                                         <a href="/Güncel-Bilgiler">Güncel Bilgiler</a>
                                     </li>
@@ -211,10 +212,13 @@
                                     <a target="_blank" href="https://twitter.com/kartalhkukcular" title="Twitter">
                                         <i class="fa fa-twitter"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214" title="Facebook">
+                                    <a target="_blank"
+                                       href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214"
+                                       title="Facebook">
                                         <i class="fa fa-facebook-official"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ" title="Youtube">
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ"
+                                       title="Youtube">
                                         <i class="fa fa-youtube-play"></i>
                                     </a>
                                 </div>

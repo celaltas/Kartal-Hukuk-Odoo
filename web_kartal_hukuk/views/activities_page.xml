@@ -152,14 +152,15 @@
                                         <a href="/Vekalet-Bilgileri">Vekalet Bilgileri</a>
                                     </li>
                                     <li>
+                                        <a href="/Güncel-Bilgiler">Güncel Bilgiler</a>
+                                    </li>
+                                    <li>
                                         <a href="/Faydalı-Linkler">Faydalı Linkler</a>
                                     </li>
                                     <li>
                                         <a href="/Iletisim">İletişim</a>
                                     </li>
-                                    <li>
-                                        <a href="/Güncel-Bilgiler">Güncel Bilgiler</a>
-                                    </li>
+
                                     <li>
                                         <a href="/web/login">Giriş</a>
                                     </li>
@@ -177,14 +178,18 @@
                                 <div id="activitiesContentLower">
                                     <t t-foreach="activities" t-as="activity">
                                         <div id="cover">
-                                           <div id="box">
+                                            <div id="box">
                                                 <div id="boxTag">
-                                                    <a t-attf-href="/Faaliyet-Alanları/{{activity.id}}"><t t-esc="activity.name"/></a>
+                                                    <a t-attf-href="/Faaliyet-Alanları/{{activity.id}}">
+                                                        <t t-esc="activity.name"/>
+                                                    </a>
                                                 </div>
                                                 <div id="boxDetails">
-                                                    <a t-attf-href="/Faaliyet-Alanları/{{activity.id}}">Detayları İnceleyin</a>
+                                                    <a t-attf-href="/Faaliyet-Alanları/{{activity.id}}">Detayları
+                                                        İnceleyin
+                                                    </a>
                                                 </div>
-                                           </div>
+                                            </div>
                                         </div>
                                     </t>
                                 </div>
@@ -207,10 +212,13 @@
                                     <a target="_blank" href="https://twitter.com/kartalhkukcular" title="Twitter">
                                         <i class="fa fa-twitter"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214" title="Facebook">
+                                    <a target="_blank"
+                                       href="https://www.facebook.com/pages/Kadir-Kartal-Hukuk-B%C3%BCrosu/1020203924663214"
+                                       title="Facebook">
                                         <i class="fa fa-facebook-official"></i>
                                     </a>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ" title="Youtube">
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCTm1jH1FWelta9fIdFc8RIQ"
+                                       title="Youtube">
                                         <i class="fa fa-youtube-play"></i>
                                     </a>
                                 </div>
